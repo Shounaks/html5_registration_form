@@ -27,3 +27,19 @@ issue_authority.placeholder = localStorage.getItem("issue_authority");
 issue_date.placeholder = localStorage.getItem("issue_date");
 issue_state.placeholder = localStorage.getItem("issue_state");
 expiry_date.placeholder =  localStorage.getItem("expiry_date");
+
+console.log("Retrieved Data From Local Storage:")
+
+console.log("Name : " + full_name.placeholder)
+console.log("Date Of Birth : " + date_of_birth.placeholder)
+console.log("Email : " + email.placeholder)
+console.log("Mobile Number : " + mobile_number.placeholder)
+console.log("Gender : " + gender.placeholder)
+console.log("Occupation : " + occupation.placeholder)
+
+console.log("Id Type : " + id_type.placeholder)
+console.log("Id Number : " + id_number.placeholder)
+console.log("Issue Authority : " + issue_authority.placeholder)
+console.log("Issue Date : " + issue_date.placeholder)
+console.log("Issue State : " + issue_state.placeholder)
+console.log("Expiry Date : " + expiry_date.placeholder)
