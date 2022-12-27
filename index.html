@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body class="container-md inline-block bg-primary">
+    <div class="row align-middle">
+        <div class="d-flex flex-column justify-content-center card mt-4">
+            <div class="card-body">
+                <h5 class="card-title"><span
+                        style="text-decoration: underline;text-decoration-color: blue;">Re</span>gistration
+                </h5>
+                <br>
+                <h6 class="card-subtitle mb-2 text-muted">Personal Details</h6>
+                <br>
+                <form action="#">
+                    <div class="card-text">
+                        <div class="row">
+                            <div class="col form-group">
+                                <label for="full_name" class="form-label"><b>Full Name*:</b></label>
+                                <input type="text" name="full_name" id="full_name" class="form-control" placeholder="Enter your name" required>
+                                <p><span class="text-danger" id="full_name_error" hidden>Name should consist Alphabets and Spaces</span></p>
+                            </div>
+                            <div class="col form-group">
+                                <label for="date_of_birth" class="form-label"><b>Date of Birth*:</b></label>
+                                <input type="date" name="date_of_birth" id="date_of_birth" class="form-control" placeholder="25-11-1997" required>
+                                <p><span class="text-danger" id="date_of_birth_error" hidden>date error</span></p>
+                            </div>
+                            <div class="col form-group">
+                                <label for="email" class="form-label"><b>Email*:</b></label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                                <p><span class="text-danger" id="email_error" hidden>Invalid Email Provided.</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-group">
+                                <label for="mobile_number" class="form-label"><b>Mobile number*:</b></label>
+                                <input type="number" name="mobile_number" id="mobile_number" class="form-control" placeholder="Enter mobile number" required>
+                                <p><span class="text-danger" id="mobile_number_error" hidden>Mobile Number is Invalid.</span></p>
+                            </div>
+                            <div class="col form-group">
+                                <label for="gender" class="form-label"><b>Gender:</b></label>
+                                <input type="text" name="gender" id="gender" class="form-control" placeholder="Enter your gender">
+                                <p><span class="text-danger" id="gender_error" hidden>Gender should be either male or female.</span></p>
+                            </div>
+                            <div class="col form-group">
+                                <label for="occupation" class="form-label"><b>Occupation:</b></label>
+                                <input type="text" name="occupation" id="occupation" class="form-control" placeholder="Enter occupation">
+                                <p><span class="text-danger" id="occupation_error" hidden>occupation shouldn't contain special characters.</span></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <h6 class="card-subtitle mb-2 text-muted">Identity Details</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col form-group">
+                                <label for="id_type" class="form-label"><b>ID Type:</b></label>
+                                <input type="text" name="id_type" id="id_type" class="form-control" placeholder="Enter ID type">
+                                <p><span class="text-danger" id="id_type_error" hidden>id type error</span></p>
+                            </div>
+                            <div class="col form-group">
+                                <label for="id_number" class="form-label"><b>ID Number:</b></label>
+                                <input type="number" name="id_number" id="id_number" class="form-control" placeholder="Enter ID number">
+                                <p><span class="text-danger" id="id_number_error" hidden>id number error</span></p>
+                            </div>
+                            <div class="col form-group">
+                                <label for="issue_authority" class="form-label"><b>Issue Authority:</b></label>
+                                <input type="text" name="issue_authority" id="issue_authority" class="form-control" placeholder="Enter issue department">
+                                <p><span class="text-danger" id="issue_authority_error" hidden>issue department error</span></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col form-group">
+                                <label for="issue_date" class="form-label"><b>Issue Date:</b></label>
+                                <input type="date" name="issue_date" id="issue_date" class="form-control" placeholder="Enter ID issue date">
+                                <p><span class="text-danger" id="issue_date_error" hidden>id issue error</span></p>
+                            </div>
+                            <div class="col form-group">
+                                <label for="issue_state" class="form-label"><b>Issue State:</b></label>
+                                <input type="text" name="issue_state" id="issue_state" class="form-control" placeholder="Enter ID issue state">
+                                <p><span class="text-danger" id="issue_state_error" hidden>id issue error</span></p>
+                            </div>
+                            <div class="col form-group">
+                                <label for="expiry_date" class="form-label"><b>Expiry Date:</b></label>
+                                <input type="date" name="expiry_date" id="expiry_date" class="form-control" placeholder="Enter ID expiry date">
+                                <p><span class="text-danger" id="expiry_date_error" hidden>expiry date error</span></p>
+                            </div>
+                        </div>
+                        <br>
+                        <span href="#" class="card-link col">
+                            <button id="submitRegisterationButton" type="button" class="btn col-md-4 btn-primary" onclick="saveDataIntoLocalStorage()" disabled>Next ➡️</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
